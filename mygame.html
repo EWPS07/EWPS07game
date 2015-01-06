@@ -1,105 +1,87 @@
 <script>
-		var un,
-			cn;
-		un = prompt("Pick a number from 1 to 10!");
+    var userNumber,
+      computerNumber = Math.floor(Math.random() * 10);
 
-		cn = Math.floor(Math.random() * 10);
 
-		if (un == cn) {
-				message = "You get to drive a Ferarri!";
-		}
-		else{
-				message = "You get to drive a prius!";
-		};
+  userNumber = prompt("Pick a number from 1 to 10!");
 
-		alert(message);
+    if (userNumber == computerNumber) {
+        message = "You get to drive a Ferarri!";
+    }
+    else{
+        message = "You get to drive a prius!";
+    };
 
-	var un,
-		cn;
-	un = prompt("pick another number from 1 to 10!");
+  alert(message);
 
-	cn = Math.floor(Math.random() * 10);
 
-	if (un == cn) {
-		message = "You're racing against a prius! This should be easy!";
-	}
-	else{
-		message = "Put the petal to the floor! You're up against a Ferarri!";
-	}
-	alert(message);
+  userNumber = prompt("pick another number from 1 to 10!");
 
-		var un,
-			cn;
-		un = prompt("Pick another number from 1 to 10 to see who gets off the line first!");
+  if (userNumber == computerNumber) {
+    message = "You're racing against a prius! This should be easy!";
+  }
+  else{
+    message = "Put the petal to the floor! You're up against a Ferarri!";
+  }
+  alert(message);
 
-		cn = Math.floor(Math.random() * 10);
 
-		if (un >= cn) {
-			message = "You beat the other guy off the line! Hang on to your position!";
-		}
-		else{
-			message = "The other guy beat you off the line but there's still time to catch him!";
-		}
-		alert(message);
-	var un,
-		cn;
-	un = prompt("Pick another number from 1 to 10 to try to use your NOS!");
+  userNumber = prompt("Pick another number from 1 to 10 to see who gets off the line first!");
 
-	cn = Math.floor(Math.random() * 10);
+  if (userNumber >= computerNumber) {
+    message = "You beat the other guy off the line! Hang on to your position!";
+  }
+  else{
+    message = "The other guy beat you off the line but there's still time to catch him!";
+  }
+  alert(message);
+  
+   
+  userNumber = prompt("Pick another number from 1 to 10 to try to use your NOS!");
 
-	if (un >= cn) {
-		message = "Your NOS pushed you to the front!";
-	}
+  if (userNumber >= computerNumber) {
+    message = "Your NOS pushed you to the front!";
+  }
 
-	else{
-		message = "Tough luck, your NOS didn't work!";
-	}
-	alert(message);
+  else{
+    message = "Tough luck, your NOS didn't work!";
+  }
+  alert(message);
 
-		var un,
-	cn;
-		un = prompt("You and the other guy bounce off of eachother and you spin out! Pick another number from 1 to 10.");
+  
+  userNumber = prompt("You and the other guy bounce off of eachother and you spin out! Pick another number from 1 to 10.");
 
-		cn = Math.floor(Math.random() * 10);
+  if (userNumber >= computerNumber){
+     message = "You recover from your spin and stay close!";
+  }
+   else{
+     message = "The spin was too much, you're really far behind!";
+  }
+  alert(message);
 
-		if (un >= cn){
-			message = "You recover from your spin and stay close!";
-		}
-		else{
-			message = "The spin was too much, you're really far behind!";
-		}
-		alert(message);
+  
+  userNumber = prompt("Pick another number from 1 to 10 to see if you can take a shortcut!");
 
-	var un, 
-		cn;
-		
-	un = prompt("Pick another number from 1 to 10 to see if you can take a shortcut!");
+  if (userNumber >= computerNumber){
+    message = "You took the shortcut that only you know and now you're neck and neck!";
+  }
+  else{
+    message = "Oh no, something was blocking your shortcut!";
+  }
+  alert(message);
 
-	cn = Math.floor(Math.random() * 10);
-
-	if (un >= cn){
-		message = "You took the shortcut that only you know and now you're neck and neck!";
-	}
-	else{
-		message = "Oh no, something was blocking your shortcut!";
-	}
-	alert(message);
-
-		var un,
-			cn;
-		un = prompt("Pick one more time from 1 to 10 to see if you've got what it takes to beat the other guy!");
-
-		cn = Math.floor(Math.random() * 10);
-
-		if (un >= cn){
-			message = "You beat him by a hair! Good race!";
-		}
-		else{
-			message = "He barely beat you! Better luck next time!";
-		}
-		
-		alert(message);
+  
+  userNumber = prompt("Pick one more time from 1 to 10 to see if you've got what it takes to beat the other guy!");
+    
+  if (userNumber >= computerNumber){
+    message = "You beat him by a hair! Good race!";
+  }
+  else{
+    message = "He barely beat you! Better luck next time!";
+  }
+    
+  alert(message);
 
 </script>
 
-	
+  
