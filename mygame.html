@@ -1,0 +1,45 @@
+<script>
+    var userNumber;
+    var checkAnswer = function(question, rightReponse, wrongResponse) {
+      var computerNumber = Math.floor(Math.random() * 10);
+      var message;
+      userNumber = prompt(question);
+      if (userNumber == computerNumber) {
+        message = rightReponse;  
+      } else {
+        message = wrongResponse;
+      }
+    alert(message);  
+    };
+
+
+    checkAnswer("Pick a number from 1 to 10!",
+      "You get to drive a Ferarri!", 
+      "You get to drive a prius!")
+
+    checkAnswer("pick another number from 1 to 10!",
+      "You're racing against a prius! This should be easy!", 
+      "Put the petal to the floor! You're up against a Ferarri!")
+
+    checkAnswer("Pick another number from 1 to 10 to see who gets off the line first!",
+      "You beat the other guy off the line! Hang on to your position!",
+      "The other guy beat you off the line but there's still time to catch him!")
+   
+    checkAnswer("Pick another number from 1 to 10 to try to use your NOS!",
+      "Your NOS pushed you to the front!",
+      "Tough luck, your NOS didn't work!")
+  
+    checkAnswer("You and the other guy bounce off of eachother and you spin out! Pick another number from 1 to 10.",
+      "You recover from your spin and stay close!",
+      "The spin was too much, you're really far behind!")
+  
+    checkAnswer("Pick another number from 1 to 10 to see if you can take a shortcut!",
+      "You took the shortcut that only you know and now you're neck and neck!", 
+      "Oh no, something was blocking your shortcut!")
+
+    checkAnswer("Pick one more time from 1 to 10 to see if you've got what it takes to beat the other guy!",
+      "You beat him by a hair! Good race!", 
+      "He barely beat you! Better luck next time!");
+</script>
+
+  
